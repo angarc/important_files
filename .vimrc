@@ -15,17 +15,21 @@ Plug 'flazz/vim-colorschemes'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-surround'
 Plug 'twerth/ir_black' 
+Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 set guifont=Anonymous\ Pro\ for\ Powerline:h24
-" set guifont=Inconsolata\ for\ Powerline:h24
-
-" colorscheme minimalist 
-" color minimalist
+ 
+" colorscheme minimalist   
 " let g:airline_theme='minimalist'
 colorscheme pyte
 color pyte
 let g:airline_theme="light"
+
+" Dark UI
+"colorscheme Black
+"color Black
+"let g:airline_theme="serene"
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
@@ -46,6 +50,9 @@ let g:NERDTreeWinSize=50
 set number relativenumber
 set nu rnu
 
+" Colemak to QWERTY keybindings
+let g:NERDTreeMenuDown = 'n'
+let g:NERDTreeMenuUp = 'e'
 noremap d g
 noremap e k
 noremap f e
